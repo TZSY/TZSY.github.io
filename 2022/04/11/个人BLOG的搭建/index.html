@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://tzsy.github.io">
-  <title>Archives: 2020 | TZSY的一亩三分地</title>
+  <title>个人BLOG的搭建 | TZSY的一亩三分地</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="只是一个博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="TZSY的一亩三分地">
-<meta property="og:url" content="https://tzsy.github.io/archives/2020/index.html">
+  <meta name="description" content="搭建blog的流程前言​    近来学习git的用法，尝试使用github来管理自己的文件，干脆就继续搭一个git的blog，以后估计也会一直维护，不断改进。正好完成该blog的第一个post。 ​    搭建环境是ubuntu，这篇仅仅只是搭建。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="个人BLOG的搭建">
+<meta property="og:url" content="https://tzsy.github.io/2022/04/11/%E4%B8%AA%E4%BA%BABLOG%E7%9A%84%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="TZSY的一亩三分地">
-<meta property="og:description" content="只是一个博客">
+<meta property="og:description" content="搭建blog的流程前言​    近来学习git的用法，尝试使用github来管理自己的文件，干脆就继续搭一个git的blog，以后估计也会一直维护，不断改进。正好完成该blog的第一个post。 ​    搭建环境是ubuntu，这篇仅仅只是搭建。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-11T15:17:46.000Z">
+<meta property="article:modified_time" content="2022-04-11T15:17:53.697Z">
 <meta property="article:author" content="TZSY">
-<meta property="article:tag" content="初学者">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="blog相关">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="TZSY的一亩三分地" type="application/atom+xml">
@@ -153,36 +156,134 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-个人BLOG的搭建" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/09/19/%E4%B8%AA%E4%BA%BABLOG%E7%9A%84%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  	<time datetime="2020-09-19T07:23:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-19</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/09/19/%E4%B8%AA%E4%BA%BABLOG%E7%9A%84%E6%90%AD%E5%BB%BA/">个人BLOG的搭建</a>
+    <h1 class="article-title" itemprop="name">
+      个人BLOG的搭建
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2022/04/11/%E4%B8%AA%E4%BA%BABLOG%E7%9A%84%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2022-04-11T15:17:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="搭建blog的流程"><a href="#搭建blog的流程" class="headerlink" title="搭建blog的流程"></a>搭建blog的流程</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    近来学习git的用法，尝试使用github来管理自己的文件，干脆就继续搭一个git的blog，以后估计也会一直维护，不断改进。正好完成该blog的第一个post。</p>
+<p>​    搭建环境是ubuntu，这篇仅仅只是搭建。</p>
+<a id="more"></a>
+<p>​    在搭建时建议进入root模式，避免权限问题，如下进入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo su</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="安装nodejs和npm"><a href="#安装nodejs和npm" class="headerlink" title="安装nodejs和npm"></a>安装nodejs和npm</h2><p>​    在网上了解了一下，选择了hexo框架来搭建blog，前置当然是要下载的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ apt install node&#x2F;&#x2F;安装nodejs</span><br><span class="line">$ apt install npm&#x2F;&#x2F;安装npm</span><br><span class="line">$ npm install -g cnpm --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line">&#x2F;&#x2F;换taobao的源用npm下载cnpm</span><br><span class="line">&#x2F;&#x2F;安装完成可以使用--version查看版本</span><br></pre></td></tr></table></figure>
+
+<h2 id="全局安装hexo"><a href="#全局安装hexo" class="headerlink" title="全局安装hexo"></a>全局安装hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br><span class="line">$ hexo --version&#x2F;&#x2F;查看版本，检查是否成功</span><br></pre></td></tr></table></figure>
+
+<p>接下来决定安装目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ pwd</span><br><span class="line">username&#x2F;&#x2F;个人文件夹，各自选择</span><br><span class="line">$ mkdir blog &#x2F;&#x2F;在当前目录下创建blog文件夹，后续操作全部在此文件夹下，名字各自取</span><br><span class="line">$ cd blog&#x2F;&#x2F;进入blog</span><br></pre></td></tr></table></figure>
+
+<p>接下来开始用hexo搭建blog</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">INFO Clioning hexo-starter to &#x2F;User&#x2F;username&#x2F;blog</span><br><span class="line">...</span><br><span class="line">Clioning into &quot;&#x2F;User&#x2F;username&#x2F;blog&#x2F;themes&#x2F;landscape&quot;...</span><br><span class="line">&#x2F;&#x2F;初始给你了个landscape的主题</span><br><span class="line">...</span><br><span class="line">INFO Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p>hexo目前已经安装完整。</p>
+<h2 id="启动blog"><a href="#启动blog" class="headerlink" title="启动blog"></a>启动blog</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s&#x2F;&#x2F;启动hexo博客</span><br><span class="line">INFO Start processing</span><br><span class="line">INFO Hexo is running at http:&#x2F;&#x2F;localhost:4000. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+
+<p>​    在浏览器输入localhost:4000，就能看到目前生成在本地的blog了。</p>
+<p>​    Hexo给你新建了一个HelloWorld文章，里面有hexo的一些操作，可以关注一下。</p>
+<h2 id="写post"><a href="#写post" class="headerlink" title="写post"></a>写post</h2><p>​    现在写一篇自己的post。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的第一篇博客文章&quot;&#x2F;&#x2F;new了一个名字为“我的第一篇博客文章”的markdown文件。</span><br></pre></td></tr></table></figure>
+
+<p>​    该post在blog的下属文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd source&#x2F;_posts&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>​    用vim或者别的什么markdown工具编辑文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的第一篇博客文章</span><br><span class="line">date: 2020-0x-0x 12:20:20</span><br><span class="line">tags: 标签</span><br><span class="line">---</span><br><span class="line">注意在上面：的后面一定要接一个空格</span><br></pre></td></tr></table></figure>
+
+<p>​    保存退出，接下来退回blog文件夹下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd ..&#x2F;..</span><br><span class="line">$ pwd</span><br><span class="line">&#x2F;Users&#x2F;username&#x2F;blog</span><br></pre></td></tr></table></figure>
+
+<p>​    然后进行下面的操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g&#x2F;&#x2F;生成hexoblog</span><br><span class="line">$ hexo s&#x2F;&#x2F;再次启动hexo</span><br></pre></td></tr></table></figure>
+
+<p>​    之后刷新一下localhost:4000，就可以发现已经提交了新的post。</p>
+<h2 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h2><p>​    第一步，当然是登录github</p>
+<p>​    第二步，新建一个库，库名为 xxxx.github.io(注意xxxx是你的名字，比如我是TZSY，就是TZSY.github.io),必须符合要求。随意写下description然后create repository就完事了。</p>
+<p>​    然后回到shell，安装一个工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>​    安装完成，我们就需要配置这个工具了。打开_config.yml，我照样使用vim打开。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim _config.yml</span><br></pre></td></tr></table></figure>
+
+<p>​    到最底部</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type:</span><br></pre></td></tr></table></figure>
+
+<p>​    改成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: http:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;personal access token@github.com&#x2F;xxxx&#x2F;xxxx.github.io.git</span><br><span class="line">  branch:master</span><br></pre></td></tr></table></figure>
+
+<p>​    personal access token 需要去github上自己创建，这里附上<a target="_blank" rel="noopener" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">官方教程链接</a>。记住要把token保存下来，只有创建的时候能够看见其内容。xxxx是github的name，当然可以去github那边直接复制这个https://…..;branch不写就是默认master，要改分支就改成自己想要的分支。</p>
+<p>​    _config.yml目前就修改完成了，下一步就是部署到远端。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br><span class="line">Username for &quot;https:&#x2F;&#x2F;github.com&quot;:</span><br><span class="line">输入你的github的name就完事了</span><br></pre></td></tr></table></figure>
+
+<p>​    设置完成后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>​    就部署成功了，可以使用xxxx.github.io访问了。</p>
+<h2 id="主题的更换"><a href="#主题的更换" class="headerlink" title="主题的更换"></a>主题的更换</h2><p>​    还是在blog目录下操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone http:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia.git themes&#x2F;yilia</span><br></pre></td></tr></table></figure>
+
+<p>​    这是一个叫yilia的hexo主题，大家可以自行寻找其他的主题，还是一样的操作。</p>
+<p>​    修改_config.yml中的theme行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ theme: landscape  </span><br><span class="line">改成</span><br><span class="line">$ theme: yilia</span><br></pre></td></tr></table></figure>
+
+<p>​    保存退出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<p>​    然后进去之后再按照各自主题的说明进行对_config.yml的修改。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>​    搭建blog的大部分内容都参考于B站CodeSheep的讲解视频。非常感谢他的视频对我的指导。以下贴出视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/">https://www.bilibili.com/video/BV1Yb411a7ty/</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝快乐水<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,19 +299,109 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://tzsy.github.io/2022/04/11/%E4%B8%AA%E4%BA%BABLOG%E7%9A%84%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%90%AD%E5%BB%BAblog%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">搭建blog的流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85nodejs%E5%92%8Cnpm"><span class="toc-number">1.2.</span> <span class="toc-text">安装nodejs和npm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85hexo"><span class="toc-number">1.3.</span> <span class="toc-text">全局安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8blog"><span class="toc-number">1.4.</span> <span class="toc-text">启动blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99post"><span class="toc-number">1.5.</span> <span class="toc-text">写post</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A"><span class="toc-number">1.6.</span> <span class="toc-text">部署到github上</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E7%9A%84%E6%9B%B4%E6%8D%A2"><span class="toc-number">1.7.</span> <span class="toc-text">主题的更换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">1.8.</span> <span class="toc-text">参考资料</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -233,8 +424,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
